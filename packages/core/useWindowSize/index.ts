@@ -62,7 +62,7 @@ export function useWindowSize(options: UseWindowSizeOptions = {}) {
     watch(matches, () => update())
   }
 
-  return { width, height }
+  return { width, height, update }
 }
 
 export type UseWindowSizeReturn = ReturnType<typeof useWindowSize>
